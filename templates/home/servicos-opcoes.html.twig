@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}GR Pintura{% endblock %}
+
+{% block body %}
+<div class"container py-4">
+        <header class="text-center m-5">
+            <h2 class="arsenal-bold section-title">Serviços e Valores</h2>
+            <p class="section-description">Fique a vontade para ter uma noção de valor para o seu seu orçamento</p>
+        </header>
+    <section class="custom-section py-5 m-4" data-controller="range" style="background-image: url('06-gr-text-proj.jpg');">
+    <div class="container">
+    <div class="row">
+      <div class="col-6 py-4">
+        <div class="responsive-text">
+          <h1>Textura Projetada</h1>
+          <p>Aplicação em áreas externas com longa durabilidade</p>
+          <p>R$ 27,00 por m²</p>
+          <input type="range" class="range-input" min="0" max="50" step="5" value="0"
+                  data-price="27" data-action="input->range#update"
+                  data-range-target="range">
+          <span class="range-value" data-range-target="valueLabel">0 m²</span>
+          <div class="total-price">Prévia de Valor: R$ <span class="price-display" data-range-target="priceDisplay">0.00</span></div>
+          <p class="legend-description">Lembrando que a metragem real pode variar durante a visita técnica.</p>
+        </div>
+        </div>
+      <div class="col-6 py-4">
+    </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+    <section class="custom-section py-5 m-4" data-controller="range" style="background-image: url('comercial-9.png');">
+    <div class="container">
+    <div class="row">
+      <div class="col-6 py-4">
+        <div class="responsive-text">
+          <h1>Verniz</h1>
+          <p>Excelente para renovar objetos com acabamento em madeira</p>
+            <p>R$ 25,00 por m²</p>
+          <input type="range" class="range-input" min="0" max="50" step="5" value="0"
+                  data-price="25" data-action="input->range#update"
+                  data-range-target="range">
+          <span class="range-value" data-range-target="valueLabel">0 m²</span>
+          <div class="total-price">Valor aproximado - R$: <span class="price-display" data-range-target="priceDisplay">0.00</span></div>
+          <p class="legend-description">Lembrando que a metragem real pode variar durante a visita técnica.</p>
+        </div>
+      </div>
+      <div class="col-6 py-4">
+
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <section class="custom-section py-5 m-4" data-controller="range" style="background-image: url('comercial-11.jpg');">
+    <div class="container">
+    <div class="row">
+      <div class="col-6 py-2">
+        <div class="responsive-text">
+          <h1>Pintura à Óleo</h1>
+          <p>Proteja superfícies metálicas</p>
+            <p>R$ 30,00 por m²</p>
+          <input type="range" class="range-input" min="0" max="50" step="5" value="0"
+                  data-price="30" data-action="input->range#update"
+                  data-range-target="range">
+          <span class="range-value" data-range-target="valueLabel">0 m²</span>
+          <div class="total-price">Valor aproximado - R$: <span class="price-display" data-range-target="priceDisplay">0.00</span></div>
+          <p class="legend-description">Lembrando que a metragem real pode variar durante a visita técnica.</p>
+        </div>
+      </div>
+      <div class="col-6 py-4">
+
+    </div>
+    </div>
+    </div>
+    </section>
+<div>  
+{% endblock %}

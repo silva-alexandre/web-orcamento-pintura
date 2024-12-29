@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Servico{% endblock %}
+
+{% block body %}
+    <h1>Create new Servico</h1>
+
+    {{ include('servico/_form.html.twig') }}
+
+    <a href="{{ path('app_servico_index') }}">back to list</a>
+{% endblock %}

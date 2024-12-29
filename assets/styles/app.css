@@ -1,0 +1,491 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+.arsenal-regular {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .arsenal-bold {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .arsenal-regular-italic {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .arsenal-bold-italic {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  p, .arsenal-regular{
+          font-weight: 380;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arsenal', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7f5, #5ba858cc);
+}
+
+.section-background-opacity {
+  background: linear-gradient(135deg, #f5f7f5, #758575cc);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top:10px;
+  font-size: 1.2rem;
+  color: rgb(10, 10, 10);
+}
+
+@media (max-width: 768px) {
+  .section-background-opacity {
+    padding: 25px; /* Reduz o espaçamento interno para telas menores */
+    margin: 40px; /* Reduz o espaçamento externo para telas menores */
+  }
+}
+
+.btn-custom {
+  background-color: #08634f96; /* Cor de fundo personalizada */
+  color: #fff; /* Cor do texto */
+  border: none; /* Remove a borda padrão */
+  padding: 10px 20px; /* Ajuste do espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.btn-custom:hover {
+  background-color: #44af98; /* Fundo mais escuro para o hover */
+  transform: scale(1.05); /* Efeito de zoom */
+  color: #fff; /* Mantém a cor do texto no hover */
+}
+
+/* Estilizando o input range para navegadores WebKit */
+input[type="range"] {
+    -webkit-appearance: none; /* Remove o estilo padrão */
+    width: 100%; /* Define a largura do slider */
+    height: 8px; /* Altura do trilho */
+    background: #ddd; /* Cor do trilho */
+    border-radius: 5px; /* Borda arredondada */
+    outline: none; /* Remove a borda ao focar */
+}
+
+/* Thumb do slider para navegadores WebKit */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove o estilo padrão do thumb */
+    appearance: none; /* Para Firefox */
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    border-radius: 50%; /* Borda arredondada */
+    background: green; /* Cor do thumb */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+}
+
+/* Estilizando o thumb para Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    border-radius: 50%; /* Borda arredondada */
+    background: green; /* Cor do thumb */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+}
+
+/* Estilizando o trilho para Firefox */
+input[type="range"]::-moz-range-track {
+    height: 8px; /* Altura do trilho */
+    background: #ddd; /* Cor do trilho */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+
+.total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .range-input {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .range-value {
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+  }
+
+
+.hero-section .container {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero-section {
+    position: relative;
+    color: white;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+  }
+  
+  .carousel-item {
+    height: 100vh; /* Garante que o carrossel cubra toda a altura da seção */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; /* Garante que o conteúdo fique acima das imagens do carrossel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada semi-transparente sobre as imagens */
+  }
+
+
+
+  /* Estilo do título principal da seção */
+.section-title {
+  font-size: 2rem;
+  color: #034b0f;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #44af98;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Descrição do cabeçalho */
+.section-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Galeria de fotos */
+.project-image {
+  width: 100%;
+  padding-top: 100%; /* Mantém a proporção quadrada */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito hover nas imagens */
+.project-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+  /* Estilo do título principal da seção */
+.section-title {
+  font-size: 1.6rem;
+  color: #034b0f;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #44af98;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Descrição do cabeçalho */
+.section-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.legend-description{
+
+  font-size: 0.7rem;
+  color: #e2dcdc;
+  margin-bottom: 30px;
+}
+
+
+/* Estiliza a lista e os ícones */
+.list-specialties {
+  list-style: none; /* Remove as marcas padrão da lista */
+  padding: 0;
+  margin: 0;
+}
+
+.list-specialties li {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaçamento entre o ícone e o texto */
+  padding: 8px 0;
+  font-size: 1rem;
+}
+
+.list-item-icon {
+  color: #44af98; /* Ajuste a cor do ícone */
+  font-size: 1.2rem;
+}
+  .projects-section .card {
+    width: 100%; /* Inicialmente, ocupa 100% da coluna */
+    max-width: 250px; /* Define uma largura máxima menor para os cards */
+    margin: 0 auto; /* Centraliza os cards */
+    border: none; /* Remove a borda padrão */
+    border-radius: 15px; /* Bordas bem arredondadas para um visual suave */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave e profunda */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.projects-section .card:hover {
+    transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumenta a sombra no hover */
+}
+
+/* Cards */
+.card {
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem de fundo no card */
+.card-cover {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Títulos e textos dos cards */
+.card-title {
+  font-size: 1.2rem;
+  color: #034b0f;
+  margin-top: 15px;
+}
+
+.card-text {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Link do card */
+.stretched-link {
+  color: #44af98;
+  transition: color 0.3s;
+}
+
+.stretched-link:hover {
+  color: #034b0f;
+}
+
+.card-cover:hover .card-cover {
+  transform: scale(1.05);
+  filter: brightness(0.8);/* Zoom ao passar o mouse */
+}
+
+/* Conteúdo dos Cards */
+.projects-section .card-body {
+    padding: 10px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.projects-section .card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #212529; /* Cor neutra escura */
+    margin-bottom: 1rem;
+}
+
+.projects-section .card-text {
+    font-size: 0.9rem;
+    color: #6c757d; /* Cor suave para o texto */
+    margin-bottom: 1.5rem;
+}
+
+/* Botão Saiba Mais */
+.projects-section .card a.stretched-link {
+    font-weight: 500;
+    color: #007bff; /* Cor azul Bootstrap */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+.projects-section .card a.stretched-link:hover {
+    color: #0056b3; /* Escurece a cor no hover */
+}
+
+@media (max-width: 768px) {
+    .projects-section .card {
+        margin-bottom: 20px;
+    }
+
+    .projects-section .card-title {
+        font-size: 1.25rem;
+    }
+
+    .projects-section .card-text {
+        font-size: 0.9rem;
+    }
+
+    .projects-section h2 {
+        font-size: 2rem;
+    }
+
+    .card-cover {
+        height: 150px; /* Altura ajustada para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-section .card-title {
+        font-size: 1.1rem;
+    }
+
+    .projects-section .card-text {
+        font-size: 0.85rem;
+    }
+
+    .projects-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .card-cover {
+        height: 120px; /* Altura ajustada para telas ainda menores */
+    }
+}
+
+
+@media (max-width: 375px) {
+    .projects-section .col-6 {
+        margin-bottom: 20px;
+    }
+
+    /* Definir a largura máxima e ajustar os cards para ficarem lado a lado */
+    .projects-section .col-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .projects-section .card {
+        max-width: 100%; /* Cards se ajustam ao tamanho da tela */
+    }
+
+    .projects-section .card-title {
+        font-size: 0.8rem;
+    }
+
+    .projects-section .card-text {
+        font-size: 0.9rem;
+    }
+
+    .projects-section h2 {
+        font-size: 2rem;
+    }
+
+    .card-cover {
+        height: 100px; /* Ajusta a altura das imagens de capa */
+    }
+}
+
+
+
+    /* Estilo para seção personalizada */
+    .custom-section {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+      }
+  
+      /* Estilo responsivo para ajustar o texto */
+      .responsive-text {
+        font-size: 1.2rem;
+        color: #fff;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      
+      /* Ajustes específicos para dispositivos móveis */
+      @media (max-width: 768px) {
+        .responsive-text {
+          font-size: 1rem;
+          padding: 6px;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .responsive-text {
+          font-size: 0.9rem;
+          padding: 10px;
+        }
+      }
+
+
+
+
+    /* Estilo para o rodapé */
+    footer {
+        background-color: #05631c; /* Cor de fundo do rodapé */
+        color: white; /* Cor do texto */
+        padding: 20px 0; /* Padding do rodapé */
+        text-align: center; /* Centraliza o texto */
+      }
+  
+      footer a {
+        color: white; /* Cor dos links */
+        margin: 0 15px; /* Margem entre os ícones */
+        text-decoration: none; /* Remove o sublinhado dos links */
+      }
+  
+      footer a:hover {
+        color: #007bff; /* Cor do link no hover */
+      }
+
+          .total-price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 10px;
+    }
+

@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Orcamento index{% endblock %}
+
+{% block body %}
+    <h1>Orcamento index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Quantidade</th>
+                <th>Valor_total</th>
+                <th>Data</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for orcamento in orcamentos %}
+            <tr>
+                <td>{{ orcamento.id }}</td>
+                <td>{{ orcamento.quantidade }}</td>
+                <td>{{ orcamento.valorTotal }}</td>
+                <td>{{ orcamento.data ? orcamento.data|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('app_orcamento_show', {'id': orcamento.id}) }}">show</a>
+                    <a href="{{ path('app_orcamento_edit', {'id': orcamento.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_orcamento_new') }}">Create new</a>
+{% endblock %}
