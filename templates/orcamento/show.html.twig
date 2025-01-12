@@ -12,8 +12,8 @@
                 <td>{{ orcamento.id }}</td>
             </tr>
             <tr>
-                <th>Quantidade</th>
-                <td>{{ orcamento.quantidade }}</td>
+                <th>Qtd</th>
+                <td>{{ orcamento.qtd }}</td>
             </tr>
             <tr>
                 <th>Valor_total</th>
@@ -21,7 +21,7 @@
             </tr>
             <tr>
                 <th>Data</th>
-                <td>{{ orcamento.data ? orcamento.data|date('Y-m-d') : '' }}</td>
+                <td>{{ orcamento.data ? orcamento.data|date('Y-m-d H:i:s') : '' }}</td>
             </tr>
         </tbody>
     </table>

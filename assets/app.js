@@ -9,7 +9,7 @@ import './bootstrap.js';
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
 
-//import '../assets/controllers/orcamento_controller';
+import '../assets/controllers/service_controller.js';
 //import '../assets/controllers/orca_valor_controller';
 //import '../assets/controllers/range_controller.js';
 //import '../assets/controllers/cliente_controller'; 

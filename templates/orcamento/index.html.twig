@@ -9,7 +9,7 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Quantidade</th>
+                <th>Qtd</th>
                 <th>Valor_total</th>
                 <th>Data</th>
                 <th>actions</th>
@@ -19,9 +19,9 @@
         {% for orcamento in orcamentos %}
             <tr>
                 <td>{{ orcamento.id }}</td>
-                <td>{{ orcamento.quantidade }}</td>
+                <td>{{ orcamento.qtd }}</td>
                 <td>{{ orcamento.valorTotal }}</td>
-                <td>{{ orcamento.data ? orcamento.data|date('Y-m-d') : '' }}</td>
+                <td>{{ orcamento.data ? orcamento.data|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
                     <a href="{{ path('app_orcamento_show', {'id': orcamento.id}) }}">show</a>
                     <a href="{{ path('app_orcamento_edit', {'id': orcamento.id}) }}">edit</a>
